@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data e Hora no Rodapé</title>
+<style>
+/* CONFIGURAÇÃO GERAL DA PÁGINA */
+body{
+margin:0;
+font-family:Arial;
+min-height:100vh;
+/* organiza o conteúdo verticalmente */
+display:flex;
+flex-direction:column;
+}
+/* ÁREA PRINCIPAL */
+main{
+flex:1;
+padding:20px;
+}
+/* RODAPÉ */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+font-size:18px;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Sistema Exemplo</h1>
+
+<p>Conteúdo da página.</p>
+</main>
+<!-- RODAPÉ -->
+<footer>
+<!-- LOCAL ONDE A DATA E HORA SERÃO MOSTRADAS -->
+<div id="dataHora"></div>
+</footer>
+<script>
+// FUNÇÃO PARA MOSTRAR DATA E HORA
+function atualizarDataHora(){
+// cria objeto com data atual
+let agora = new Date();
+// pega os dados separados
+let dia = agora.getDate();
+let mes = agora.getMonth() + 1;
+let ano = agora.getFullYear();
+let hora = agora.getHours();
+let minuto = agora.getMinutes();
+let segundo = agora.getSeconds();
+// adiciona zero quando necessário
+if(dia < 10){
+dia = "0" + dia;
+}
+if(mes < 10){
+mes = "0" + mes;
+}
+if(hora < 10){
+hora = "0" + hora;
+}
+if(minuto < 10){
+minuto = "0" + minuto;
+
+}
+if(segundo < 10){
+segundo = "0" + segundo;
+}
+// monta texto final
+let texto =
+dia + "/" + mes + "/" + ano +
+" - " +
+hora + ":" + minuto + ":" + segundo;
+// envia para o HTML
+document.getElementById("dataHora").innerHTML = texto;
+}
+// executa imediatamente
+atualizarDataHora();
+// atualiza a cada 1 segundo
+setInterval(atualizarDataHora, 1000);
+</script>
+</body>
+</html>
