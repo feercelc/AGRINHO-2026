@@ -3,26 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Agro Forte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Agro Forte - Agricultura sustentável, tecnologia e preservação ambiental.">
+    <title>Agro Forte | Futuro Sustentável</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- CABEÇALHO -->
     <header class="header">
         <h1>Agro Forte, Futuro Sustentável</h1>
         <p>Equilíbrio entre produção e meio ambiente</p>
     </header>
 
+    <!-- MENU -->
     <nav class="menu">
         <a href="#producao">Produção</a>
         <a href="#sustentabilidade">Sustentabilidade</a>
         <a href="#desafios">Desafios</a>
         <a href="#futuro">Futuro</a>
+        <a href="#calculadora">Calculadora</a>
         <a href="#contato">Contato</a>
     </nav>
 
+    <!-- INÍCIO - MANTIDO -->
     <section class="banner">
         <h2>Produzir hoje preservando o amanhã</h2>
 
@@ -34,80 +41,388 @@
         <button onclick="mostrarMensagem()">
             Saiba Mais
         </button>
+
+        <p id="mensagemBanner" class="mensagem-banner"></p>
     </section>
 
+    <!-- INTRODUÇÃO -->
+    <section class="intro">
+        <h2>O futuro do agronegócio é sustentável</h2>
+
+        <p>
+            A agricultura moderna pode unir produtividade, tecnologia e
+            preservação ambiental. Com novas técnicas e equipamentos,
+            produtores conseguem utilizar melhor os recursos naturais,
+            reduzir desperdícios e produzir de forma mais eficiente.
+        </p>
+    </section>
+
+    <!-- PRODUÇÃO -->
     <section class="section" id="producao">
+        <span class="numero">01</span>
+
         <h2>Produção Agrícola</h2>
 
         <p>
-            O agronegócio é muito importante para a economia,
-            gerando empregos e crescimento econômico.
+            O agronegócio possui grande importância econômica e social,
+            gerando empregos e fornecendo alimentos para a população.
+            A tecnologia permite aumentar a eficiência da produção
+            utilizando os recursos de maneira mais inteligente.
         </p>
 
-        <ul>
-            <li>Agricultura de precisão</li>
-            <li>Drones agrícolas</li>
-            <li>Irrigação inteligente</li>
-        </ul>
+        <div class="cards">
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800"
+                    alt="Plantação agrícola">
+                <div class="card-content">
+                    <h3>🌱 Agricultura de precisão</h3>
+                    <p>
+                        Utiliza sensores, GPS e dados para identificar
+                        as necessidades específicas de cada área da plantação.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?q=80&w=800"
+                    alt="Drone utilizado na agricultura">
+                <div class="card-content">
+                    <h3>🚁 Drones agrícolas</h3>
+                    <p>
+                        Auxiliam no monitoramento das plantações,
+                        identificação de problemas e aplicação localizada.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=800"
+                    alt="Irrigação em plantação">
+                <div class="card-content">
+                    <h3>💧 Irrigação inteligente</h3>
+                    <p>
+                        Sistemas automatizados ajudam a fornecer água
+                        somente quando e onde a plantação necessita.
+                    </p>
+                </div>
+            </article>
+
+        </div>
     </section>
 
+    <!-- DADOS -->
+    <section class="dados">
+        <h2>Por que a tecnologia é importante?</h2>
+
+        <div class="dados-grid">
+
+            <div class="dado">
+                <strong>🌎</strong>
+                <h3>Produção responsável</h3>
+                <p>Uso mais eficiente dos recursos naturais.</p>
+            </div>
+
+            <div class="dado">
+                <strong>💧</strong>
+                <h3>Menos desperdício</h3>
+                <p>Tecnologias ajudam a controlar o consumo de água.</p>
+            </div>
+
+            <div class="dado">
+                <strong>🌱</strong>
+                <h3>Solo protegido</h3>
+                <p>Práticas sustentáveis ajudam a conservar o solo.</p>
+            </div>
+
+            <div class="dado">
+                <strong>☀️</strong>
+                <h3>Energia limpa</h3>
+                <p>A energia solar pode reduzir impactos ambientais.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SUSTENTABILIDADE -->
     <section class="section" id="sustentabilidade">
+        <span class="numero">02</span>
+
         <h2>Sustentabilidade</h2>
 
         <p>
-            A sustentabilidade busca equilibrar produção
-            agrícola e preservação ambiental.
+            A sustentabilidade busca equilibrar a produção agrícola,
+            o desenvolvimento econômico e a preservação dos recursos
+            naturais para as próximas gerações.
         </p>
 
-        <ul>
-            <li>Conservação do solo</li>
-            <li>Energia renovável</li>
-            <li>Uso consciente da água</li>
-        </ul>
+        <div class="sustentabilidade-grid">
+
+            <div class="sustentabilidade-item">
+                <div class="icone">🌱</div>
+                <h3>Conservação do solo</h3>
+                <p>
+                    Rotação de culturas, cobertura vegetal e
+                    plantio direto ajudam a preservar a qualidade do solo.
+                </p>
+            </div>
+
+            <div class="sustentabilidade-item">
+                <div class="icone">☀️</div>
+                <h3>Energia renovável</h3>
+                <p>
+                    Painéis solares e outras fontes renováveis podem
+                    diminuir a dependência de combustíveis fósseis.
+                </p>
+            </div>
+
+            <div class="sustentabilidade-item">
+                <div class="icone">💧</div>
+                <h3>Uso consciente da água</h3>
+                <p>
+                    A irrigação controlada evita desperdícios e
+                    melhora o aproveitamento da água.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="section" id="desafios">
+    <!-- DESAFIOS -->
+    <section class="section desafios" id="desafios">
+        <span class="numero">03</span>
+
         <h2>Desafios Ambientais</h2>
 
         <p>
-            O desmatamento, a emissão de carbono e o uso
-            excessivo da água são grandes desafios ambientais.
+            O desenvolvimento da agricultura também precisa enfrentar
+            desafios ambientais importantes.
         </p>
+
+        <div class="desafios-grid">
+
+            <div class="desafio">
+                <span>🌳</span>
+                <h3>Desmatamento</h3>
+                <p>
+                    A expansão sem planejamento pode causar perda de
+                    biodiversidade e degradação dos ecossistemas.
+                </p>
+            </div>
+
+            <div class="desafio">
+                <span>🌡️</span>
+                <h3>Mudanças climáticas</h3>
+                <p>
+                    Alterações no clima podem afetar o rendimento
+                    das plantações e aumentar os riscos para produtores.
+                </p>
+            </div>
+
+            <div class="desafio">
+                <span>💦</span>
+                <h3>Uso da água</h3>
+                <p>
+                    A utilização excessiva dos recursos hídricos
+                    pode comprometer a disponibilidade de água.
+                </p>
+            </div>
+
+        </div>
     </section>
 
+    <!-- FUTURO -->
     <section class="section" id="futuro">
+        <span class="numero">04</span>
+
         <h2>Soluções e Futuro</h2>
 
         <p>
-            Tecnologias modernas ajudam a criar uma agricultura
-            mais sustentável e eficiente.
+            O futuro da agricultura depende da combinação entre
+            conhecimento, inovação e responsabilidade ambiental.
         </p>
 
-        <ul>
-            <li>Agricultura regenerativa</li>
-            <li>Inovação tecnológica</li>
-            <li>Energias limpas</li>
-        </ul>
+        <div class="futuro-lista">
+
+            <div>
+                <span>01</span>
+                <h3>Agricultura regenerativa</h3>
+                <p>
+                    Busca recuperar a saúde do solo e aumentar
+                    a biodiversidade.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <h3>Inovação tecnológica</h3>
+                <p>
+                    Sensores, inteligência artificial e máquinas
+                    inteligentes tornam a produção mais eficiente.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <h3>Energias limpas</h3>
+                <p>
+                    Fontes renováveis podem reduzir impactos ambientais
+                    e os custos de produção.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="section" id="contato">
-        <h2>Contato</h2>
+    <!-- DEPOIMENTO -->
+    <section class="depoimento">
 
-        <input type="text" placeholder="Digite seu nome">
-        <br><br>
+        <div class="aspas">“</div>
 
-        <textarea placeholder="Digite sua mensagem"></textarea>
-        <br><br>
+        <p>
+            A tecnologia ajuda o produtor a tomar decisões melhores,
+            economizar recursos e cuidar mais do solo e da água.
+        </p>
 
-        <button>Enviar</button>
+        <h3>— Produtor rural participante do projeto</h3>
+
     </section>
 
+    <!-- CALCULADORA -->
+    <section class="section calculadora" id="calculadora">
+
+        <span class="numero">05</span>
+
+        <h2>Calculadora de Sustentabilidade</h2>
+
+        <p>
+            Responda algumas perguntas sobre práticas sustentáveis
+            e descubra uma pontuação aproximada.
+        </p>
+
+        <div class="pergunta">
+            <label for="agua">Você utiliza sistemas para evitar desperdício de água?</label>
+
+            <select id="agua">
+                <option value="0">Não</option>
+                <option value="10">Às vezes</option>
+                <option value="20">Sim</option>
+            </select>
+        </div>
+
+        <div class="pergunta">
+            <label for="energia">Utiliza energia renovável?</label>
+
+            <select id="energia">
+                <option value="0">Não</option>
+                <option value="10">Parcialmente</option>
+                <option value="20">Sim</option>
+            </select>
+        </div>
+
+        <div class="pergunta">
+            <label for="solo">Utiliza práticas de conservação do solo?</label>
+
+            <select id="solo">
+                <option value="0">Não</option>
+                <option value="10">Às vezes</option>
+                <option value="20">Sim</option>
+            </select>
+        </div>
+
+        <div class="pergunta">
+            <label for="tecnologia">Utiliza tecnologia para monitorar a produção?</label>
+
+            <select id="tecnologia">
+                <option value="0">Não</option>
+                <option value="10">Às vezes</option>
+                <option value="20">Sim</option>
+            </select>
+        </div>
+
+        <button class="botao-calcular" onclick="calcularSustentabilidade()">
+            Calcular minha pontuação
+        </button>
+
+        <div id="resultadoCalculadora" class="resultado-calculadora"></div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contato" id="contato">
+
+        <h2>Entre em contato</h2>
+
+        <p>
+            Envie sua opinião ou sugestão sobre agricultura sustentável.
+        </p>
+
+        <form id="formularioContato">
+
+            <label for="nome">Nome</label>
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome">
+
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu e-mail">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+                id="mensagem"
+                placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">
+                Enviar mensagem
+            </button>
+
+            <p id="mensagemFormulario"></p>
+
+        </form>
+
+    </section>
+
+    <!-- FONTES -->
+    <section class="fontes">
+
+        <h2>Fontes e referências</h2>
+
+        <p>
+            Para conhecer mais sobre agricultura, tecnologia e
+            sustentabilidade, consulte instituições e organizações
+            especializadas.
+        </p>
+
+        <div class="fontes-links">
+            <a href="https://www.embrapa.br/" target="_blank">
+                Embrapa
+            </a>
+
+            <a href="https://www.fao.org/" target="_blank">
+                FAO
+            </a>
+
+            <a href="https://www.gov.br/agricultura/" target="_blank">
+                Ministério da Agricultura
+            </a>
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
     <footer class="footer">
         <p>© 2026 - Projeto Agro Forte</p>
+        <p>Produzir hoje preservando o amanhã.</p>
     </footer>
+
+        <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="voltarTopo" onclick="voltarAoTopo()" title="Voltar ao topo">↑</button>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
